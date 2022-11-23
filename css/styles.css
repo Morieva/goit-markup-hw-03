@@ -10,26 +10,63 @@
     --background-filter-color: #F5F4FA;
     --background-crew-color: #F5F4FA;
     --background-card-color: #EEEEEE;
+    --filter-text: #212121;
+    --header-border: #ECECEC;
+}
+
+/*Оформлення*/
+/*Глобальне скидання стилів*/
+h1, h2, h3, ul, p {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+ul {
+    padding-left: 0px;
+}
+img {
+    display: block;
 }
 
 body {
     background-color: var(--background-main-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+}
+.container-global {
+    width: 1600px;
+    padding: 0px 215px;    
+}
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding: 94px 0;
 }
 
 /*Header*/
+.header {    
+    border-bottom: 1px solid var(--header-border);        
+}
+.container-header {
+    display: flex;
+    align-items: center;
+}
+.container-nav {    
+    display: flex;
+    align-items: center;
+}
 /*Logo*/
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--accent-color)
-}
-.web-logo {
-    color: var(--accent-color);
+    margin-right: 93px;
 }
 .studio-logo {
     color: var(--logo-header-color);
@@ -37,118 +74,223 @@ body {
 
 /*Menu*/
 .menu {
+    display: flex;
+}
+.menu-item,
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+.menu,
+.contacts-list,
+.speciality-list,
+.crew-list,
+.feature-list,
+.filter,
+.store,
+.footer-address {
+    list-style: none;    
+}
+
+.link {
     color: var(--primary-h-color);
     font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    list-style-type: none;
     text-decoration: none;
 }
 .current,
-.link: :hover,
-.link: :focus,
-.contacts: :hover,
-.contacts: :focus
+.link:hover,
+.link:focus,
+.contacts:hover,
+.contacts:focus
 {
-    color: var(--accent-color);
+    color: var(--accent-color);   
 }
-
+.container-contacts {
+    margin-left: auto;
+}
+.menu-link
+.contacts-link {
+    display: block;
+    padding: 32px 0px;
+    /*Чому не працює??? Не можу зрозуміти*/
+}
 /*Main*/
-.hero {
+.container-hero {
     background-color: var(--background-secondary-color);
+    width: 1600px;
+    padding: 200px 452px 280px 452px;
     }
 .hero-title {
     color: var(--text-on-dark-color);
-    font-size: 44px;
     font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    max-width: 700px;
     text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-button {
     background-color: var(--accent-color);
     color: var(--text-on-dark-color);
     font-weight: 700;
-    font-size: 16px;
+    line-height: 1.9;
     letter-spacing: 0.06em;
+    cursor: pointer;
+    align-items: center;
     text-align: center;
+    padding: 10px 32px;
+    display: block;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    
 }
-.hero-button:active {
+.hero-button:active,
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--background-active-button);
-}
+} /*Чому буває таке, що при правильно написаному коді він не завжди працює? Наприклад, тут в мене до перезагрузки vs code працювао тільки через .hero-button:active:hover:focus і то тільки active, хоча, можливо, я хувер не помітила*/
 
+.container-featue {
+    width: 1200px;
+    padding: 0px 0px;
+    margin: 95px 15px 90px 15px;
+}
 /*Особливості*/
 .hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-.third-title {
+.feature-list {
+    display: flex;
+    gap: 30px;
+}
+.feature-item {
+    width: calc((100% - 3 * 30px) / 4);
+}
+.feature-title {
     color: var(--primary-h-color);
     font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
+.feature-txt {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    }
 
 /*Чим ми займаємося*/
+.section-speciality {
+    padding-top: 0;
+}
 .headline {
     color: var(--primary-h-color);
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
+    text-align: center;
+}
+.speciality {
+    margin-bottom: 50px;
+}
+.speciality-list {
+    display: flex;
+    gap: 30px;
+}
+.speciality-item {
+    width: calc((100% - 2 * 30px) / 3);
 }
 
 /*Наша команда*/
-.crew-section{
-   background-color: ver(--background-crew-color); 
+.section-crew {
+    background-color: var(--background-crew-color);
 }
-.crew-card {
+.crew-headline {
+    margin-bottom: 50px;
+}
+.crew-list {
+    display: flex;
+    gap: 30px;
+}
+.crew-item {
     background-color: ver(--background-main-color);
+    box-shadow: 0px 1px 3px #0000001F, 0px 1px 1px #00000024,
+            0px 2px 1px #00000033; 
+            /*Чи треба в rgb?*/           
+        border-radius: 0 0 4px 4px;
 }
-.card-title {
+.item-title {
     color: var(--primary-h-color);
     font-weight: 500;
-    font-size: 16px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
+    text-align: center;
 }
-.card-paragraph {
-    font-size: 16px;
+.item-paragraph {
+    line-height: 1.19;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
-
-
-footer {
+/*FOOTER*/
+.footer {
     background-color: var(--background-secondary-color);
     color: var(--text-on-dark-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.3em;
-    list-style-type: none;
-    text-decoration: none;
+    font-family: 'Roboto', sans-serif;      
 }
 .footer-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--text-on-dark-color)
-}
-.adress {
     color: var(--text-on-dark-color);
 }
+.address {
+    font-style: normal;
+    color: var(--text-on-dark-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
 .opacity {
-    color: #ffffff99;
+    color: #ffffff99; /*Як написати опасіті в hex через ver(--)? я шукала в інтернеті і не знайшла 😕*/
 }
 
 
 /*PORTFOLIO*/
-
+.filter {
+    display: inline;
+}
 .filter-button {
     background-color: var(--background-filter-color);
-    color: var(--primary-h-color);
+    color: var(--filter-text);
     font-weight: 500;
-    font-size: 16px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
-    text-align: center;
+    text-align: center; /*чому тут центрувати не потрібно? На макеті слова ж різної ширини, а кнопки сказали робити однаковими. Поки не видаляю*/
+    cursor: pointer;
 }
-.filter-button:active {
+.filter-button:active,
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--accent-color);
     color: var(--text-on-dark-color);
 }
@@ -160,9 +302,15 @@ footer {
     color: var(--primary-h-color);
     font-weight: 700;
     font-size: 18px;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 .store-text {
-    font-size: 16px;
+    line-height: 1.9;
     letter-spacing: 0.03em;
 }
+
+
+/*Перевірка:
+outline: 2px solid tomato
+*/
