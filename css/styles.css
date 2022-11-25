@@ -181,6 +181,7 @@ img {
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
+  text-align: start;
 }
 .feature-title {
   color: var(--primary-h-color);
