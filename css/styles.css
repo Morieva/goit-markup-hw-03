@@ -64,8 +64,7 @@ img {
   margin-right: auto;
 }
 .section {
-  width: 1200px;
-  align-items: center;
+  padding: 94px 0px;
 }
 /*======================Global==============*/
 
@@ -123,8 +122,9 @@ img {
 .section-hero {
   background-color: var(--background-secondary-color);
   width: 1600px;
-  height: 600px;
-  padding: 200px 0px;
+  margin: 0 auto;
+  padding: 200px 0px 280px 0px;
+  display: flex;
   text-align: center;
 }
 .hero-title {
@@ -144,7 +144,7 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 10px, 32px;
+  padding: 10px 32px;
   margin-top: 30px;
 }
 .hero-button:active,
@@ -156,7 +156,6 @@ img {
 
 /*===Особливості===*/
 .section-feature {
-  width: 1200px;
   margin: 94px 0px;
   padding: 0px 200px;
   display: flex;
@@ -337,6 +336,7 @@ img {
   background-color: var(--background-secondary-color);
   color: var(--text-on-dark-color);
   font-family: "Roboto", sans-serif;
+  width: 1600px;
   padding: 60px 200px;
 }
 .address-list {
