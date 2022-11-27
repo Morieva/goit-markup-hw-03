@@ -15,11 +15,11 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="page">
+  <body>
     <!-- Навігація сайту -->
-    <header class="section section-menu">
-      <div class="container-menu">
-        <div class="container container-nav">
+    <header class="section-menu">
+      <div class="container container-menu">
+        <div class="container-nav">
           <nav class="nav">
             <a href="./index.html" class="link logo nav-item" lang="en"
               >Web<span class="menu-logo">Studio</span></a
@@ -44,167 +44,171 @@
             </ul>
           </nav>
         </div>
-        <div class="container container-contacts">
-          <ul class="list contacts-list">
-            <li class="contacts-item">
-              <a
-                class="link contacts-item contacts-link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a
-                class="link contacts-item contacts-link"
-                href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="list contacts-list">
+          <li class="contacts-item">
+            <a
+              class="link contacts-item contacts-link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a class="link contacts-item contacts-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <section class="section section-portfolio">
-        <h1 class="hidden">Портфоліо</h1>
-        <ul class="list filter-list">
-          <li class="filter-item">
-            <button class="button filter-button" type="button">Усі</button>
-          </li>
-          <li class="filter-item">
-            <button class="button filter-button" type="button">
-              Веб-сайти
-            </button>
-          </li>
-          <li class="filter-item">
-            <button class="button filter-button" type="button">Додатки</button>
-          </li>
-          <li class="filter-item">
-            <button class="button filter-button" type="button">Дизайн</button>
-          </li>
-          <li class="filter-item">
-            <button class="button filter-button" type="button">
-              Маркетинг
-            </button>
-          </li>
-        </ul>
-        <div class="container store-container">
-          <ul class="list store-list">
-            <li class="store-card">
-              <img
-                src="./images/portfolio/tecno.jpg"
-                alt="веб-сайт"
-                width="370"
-                height="294"
-              />
-              <div class="store-container"></div>
-              <h2 class="store-title">Технокряк</h2>
-              <p class="store-text">Веб-сайт</p>
+        <div class="container">
+          <h1 class="hidden">Портфоліо</h1>
+          <ul class="list filter-list">
+            <li class="filter-item">
+              <button class="button filter-button" type="button">Усі</button>
             </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/poster.jpg"
-                alt="постер з двома баскетболістами"
-                width="370"
-                height="294"
-              />
-              <div class="store-container"></div>
-              <h2 class="store-title">
-                Постер <span lang="en">New Orlean vs Golden Star</span>
-              </h2>
-              <p class="store-text">Дизайн</p>
+            <li class="filter-item">
+              <button class="button filter-button" type="button">
+                Веб-сайти
+              </button>
             </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/restaurant.jpg"
-                alt="лого ресторану морепродуктів"
-                width="370"
-                height="294"
-              />
-              <div class="store-container">
-                <h2 class="store-title">
-                  Ресторан <span lang="en">Seafood</span>
-                </h2>
-                <p class="store-text">Додаток</p>
-              </div>
+            <li class="filter-item">
+              <button class="button filter-button" type="button">
+                Додатки
+              </button>
             </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/prime.jpg"
-                alt="навушники"
-                width="370"
-                height="294"
-              />
-              <div class="store-container">
-                <h2 class="store-title">Проєкт <span lang="en">Prime</span></h2>
-                <p class="store-text">Маркетинг</p>
-              </div>
+            <li class="filter-item">
+              <button class="button filter-button" type="button">Дизайн</button>
             </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/boxes.jpg"
-                alt="дві коробки: велика біла і маленька коричнева"
-                width="370"
-                height="294"
-              />
-              <div class="store-container">
-                <h2 class="store-title">Проєкт <span lang="en">Boxes</span></h2>
-                <p class="store-text">Додаток</p>
-              </div>
-            </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/inspiration.jpg"
-                alt="вигляд веб-сайту"
-                width="370"
-                height="294"
-              />
-              <div class="store-container">
-                <h2 class="store-title" lang="en">
-                  Inspiration has no Borders
-                </h2>
-                <p class="store-text">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/limited.jpg"
-                alt="фото сторінки журналу"
-                width="370"
-                height="294"
-              />
-              <div class="store-container">
-                <h2 class="store-title">
-                  Видання <span lang="en">Limited Edition</span>
-                </h2>
-                <p class="store-text">Дизайн</p>
-              </div>
-            </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/lab.jpg"
-                alt="фото лейблу"
-                width="370"
-                height="294"
-              />
-              <div class="store-container">
-                <h2 class="store-title">Проєкт <span lang="en">LAB</span></h2>
-                <p class="store-text">Маркетинг</p>
-              </div>
-            </li>
-            <li class="store-card">
-              <img
-                src="./images/portfolio/growing_business.jpg"
-                alt="фото роботи з додатком через ноутбук"
-                width="370"
-                height="294"
-              />
-              <div class="store-container">
-                <h2 class="store-title" lang="en">Growing Business</h2>
-                <p class="store-text">Додаток</p>
-              </div>
+            <li class="filter-item">
+              <button class="button filter-button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
+          <div class="container store-container">
+            <ul class="list store-list">
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/tecno.jpg"
+                  alt="веб-сайт"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container"></div>
+                <h2 class="card-title">Технокряк</h2>
+                <p class="card-text">Веб-сайт</p>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/poster.jpg"
+                  alt="постер з двома баскетболістами"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container"></div>
+                <h2 class="card-title">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="card-text">Дизайн</p>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/restaurant.jpg"
+                  alt="лого ресторану морепродуктів"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container">
+                  <h2 class="card-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="card-text">Додаток</p>
+                </div>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/prime.jpg"
+                  alt="навушники"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container">
+                  <h2 class="card-title">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
+                  <p class="card-text">Маркетинг</p>
+                </div>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/boxes.jpg"
+                  alt="дві коробки: велика біла і маленька коричнева"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container">
+                  <h2 class="card-title">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="card-text">Додаток</p>
+                </div>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/inspiration.jpg"
+                  alt="вигляд веб-сайту"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container">
+                  <h2 class="card-title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="card-text">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/limited.jpg"
+                  alt="фото сторінки журналу"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container">
+                  <h2 class="card-title">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="card-text">Дизайн</p>
+                </div>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/lab.jpg"
+                  alt="фото лейблу"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container">
+                  <h2 class="card-title">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="card-text">Маркетинг</p>
+                </div>
+              </li>
+              <li class="store-card">
+                <img
+                  src="./images/portfolio/growing_business.jpg"
+                  alt="фото роботи з додатком через ноутбук"
+                  width="370"
+                  height="294"
+                />
+                <div class="card-info-container">
+                  <h2 class="card-title" lang="en">Growing Business</h2>
+                  <p class="card-text">Додаток</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

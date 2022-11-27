@@ -17,6 +17,7 @@ body {
   background-color: var(--background-main-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  width: 1600px;
 }
 h1,
 h2,
@@ -47,18 +48,8 @@ img {
 .button {
   cursor: pointer;
 }
-.page {
-  width: 1600px;
-  padding: 0px 215px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 1200px;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -102,17 +93,24 @@ img {
 }
 .nav-link,
 .contacts-link {
-  color: var(--primary-h-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding: 32px 0px;
 }
-.container-contacts:not(:last-child),
+.nav-link {
+  color: var(--primary-h-color);
+}
+.contacts-link {
+  color: var(--primary-text-color);
+}
 .nav-item:not(:last-child),
 .contacts-item:not(:last-child) {
   margin-right: 50px;
+}
+.contacts-list {
+  margin-left: auto;
 }
 /*=========Menu==========*/
 /*======================Global==============*/
@@ -121,11 +119,8 @@ img {
 /*=====Hero======*/
 .section-hero {
   background-color: var(--background-secondary-color);
-  width: 1600px;
   margin: 0 auto;
   padding: 200px 0px 280px 0px;
-  display: flex;
-  text-align: center;
 }
 .hero-title {
   color: var(--text-on-dark-color);
@@ -202,7 +197,7 @@ img {
 
 /*Чим ми займаємося*/
 .section-speciality {
-  margin: 0px 200px;
+  padding-top: 0px;
 }
 .headline {
   color: var(--primary-h-color);
@@ -212,12 +207,10 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.container-speciality {
-  margin: 50px 0px 94px 0px;
-}
 .speciality-list {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
 }
 .speciality-item:not(:last-child) {
   margin-right: 30px;
@@ -227,8 +220,6 @@ img {
 /*Наша команда*/
 .crew-section {
   background-color: var(--background-crew-color);
-  width: 1600px;
-  margin: 0px 200px;
   padding: 94px 0px;
   display: flex;
   text-align: center;
@@ -296,13 +287,12 @@ img {
 /*=======Filter========*/
 
 /*======Store=========*/
-.container.store-container {
+.store-container {
   padding: 0px;
 }
 .store-list {
   display: flex;
   flex-wrap: wrap;
-
   gap: 30px;
 }
 .store-card {
@@ -310,22 +300,22 @@ img {
   width: 370px;
   border: 1px var(--borderline-card-color);
 }
-.store-container {
+.card-info-container {
   padding: 20px;
-  display: flex;
-  text-align: start;
 }
-.store-title {
+.card-title {
   color: var(--primary-h-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: start;
   margin-bottom: 4px;
 }
-.store-text {
+.card-text {
   line-height: 1.9;
   letter-spacing: 0.03em;
+  text-align: start;
 }
 
 /**/
@@ -337,7 +327,6 @@ img {
   background-color: var(--background-secondary-color);
   color: var(--text-on-dark-color);
   font-family: "Roboto", sans-serif;
-  width: 1600px;
   padding: 60px 200px;
 }
 .address-list {
