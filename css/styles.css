@@ -121,7 +121,7 @@ img {
 .section-hero {
   background-color: var(--background-secondary-color);
   margin: 0 auto;
-  padding: 200px 0px 280px 0px;
+  padding: 200px 0px;
   text-align: center;
 }
 .hero-title {
@@ -153,10 +153,6 @@ img {
 /*=====Hero======*/
 
 /*===Особливості===*/
-.section-feature {
-  margin: 94px 0px;
-  padding: 0px 200px;
-}
 .hidden {
   position: absolute;
   width: 1px;
@@ -281,6 +277,7 @@ img {
   letter-spacing: 0.03em;
   border-radius: 4px;
   border: 0px;
+  padding: 6px 20px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -304,10 +301,11 @@ img {
 }
 .store-card {
   background-color: var(--background-main-color);
-  border: 1px var(--borderline-card-color);
   width: 370px;
 }
 .card-info-container {
+  border: 1px solid var(--borderline-card-color);
+  border-top: none;
   padding: 20px;
 }
 .card-title {
@@ -334,7 +332,6 @@ img {
   background-color: var(--background-secondary-color);
   color: var(--text-on-dark-color);
   font-family: "Roboto", sans-serif;
-  padding: 60px 200px;
 }
 .address-list {
   margin-top: 20px;
